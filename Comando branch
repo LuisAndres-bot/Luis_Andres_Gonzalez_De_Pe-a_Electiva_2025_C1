@@ -1,0 +1,15 @@
+Comando (branch)
+
+git-branch - Listar, crear o eliminar ramas
+
+Si --list se da, o si no hay argumentos de no opción, existentes se enumeran las ramas; 
+la rama actual se resaltará en verde y marcado con un asterisco. Cualquier sucursal registrada en árboles de trabajo vinculados lo hará ser resaltado en cian y marcado con un signo más. Opción -r causa el ramas de seguimiento remoto que se enumerarán, y opción -a muestra sucursales locales y remotas.
+
+Si a <pattern> se da, se usa como comodín de shell para restringir la salida ramas coincidentes. 
+Si se dan múltiples patrones, se muestra una rama si coincide con cualquiera de los patrones.
+
+Tenga en cuenta que al proporcionar un <pattern>, debes usar --list; de lo contrario, el comando 
+puede ser interpretado como creación de ramas.
+
+Con --contains, muestra solo las ramas que contienen el commit nombrado (en otras palabras, las ramas cuya punta se compromete son descendientes de la commit nombrado), 
+--no-contains lo invierte. Con --merged, solo ramas se fusionaron en la confirmación nombrada (es decir, las ramas cuyas confirmaciones de punta son accesible desde el commit nombrado) se enumerará. Con --no-merged solo se enumerarán las sucursales no fusionadas en la confirmación nombrada. Si el <commit> falta argumento a que no cumple HEAD (es decir, la punta de la corriente rama).
